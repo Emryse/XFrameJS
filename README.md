@@ -60,3 +60,5 @@ xframe.require(["myXObj"], function(myXObj) {
 ####Note:
 1. `XFrame cann't return result, just use asyn callback.`
 2. `The XObject's properties will be synchronized too(You should call xframe.updateXObj(myXObj) after property be set), so just set some properties to object as you like.`
+
+Good luck and enjoy!
