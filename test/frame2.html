@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Frame 2</title>
+<script src="XObject.js"></script>
+<script src="../xframe.js"></script>
+<script type="text/javascript">
+	xframe.require(["xobj1"], function() {
+		xframe.regXObjShadow("xobj1", xobj1);
+		console.log("Xobj got from frame2");
+	});
+	
+	function onBtClick() {
+		xobj1.changeTimeStamp();
+		xobj1.click();
+	}
+</script>
+</head>
+<body>
+	这是frame 2
+	<button id="myBt" onclick="onBtClick()">点击我</button>
+	<div id="myText"></div>
+	<iframe id="f2_1" src="frame3.html" style="width:100%;height:100%;"></iframe>
+	<iframe id="f2_2" src="frame3.html" style="width:100%;height:100%;"></iframe>
+</body>
+</html>

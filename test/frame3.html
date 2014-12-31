@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Frame 3</title>
+<script src="XObject.js"></script>
+<script src="../xframe.js"></script>
+<script type="text/javascript"><!--
+	xframe.require(["xobj1"], function() {
+		xframe.regXObjShadow("xobj1", xobj1);
+		console.log("Xobj got from frame3");
+	});
+
+	function onBtClick() {
+		xobj1.changeTimeStamp();
+		xobj1.click();
+		xobj1.loadMsg("延迟加载成功了", function(msg) {
+			xobj1.changeTimeStamp();
+			xobj1.set("msg", msg); 
+			xobj1.click();
+			}, function(err) {console.log("失败了");});
+	}
+</script>
+</head>
+<body>
+	这是frame 3
+	<button id="myBt" onclick="onBtClick()">点击我</button>
+	<div id="myText"></div>
+</body>
+</html>
