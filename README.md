@@ -22,6 +22,7 @@ var myXObj = {
 		if(typeof onOk == "function")onOk();
 	}
 }
+// Register your JS Object to XFrame.
 xframe.regXObj("myXObj", myXObj);
 ```
 ####3. On the page invoke the former 'myXObj', add:
