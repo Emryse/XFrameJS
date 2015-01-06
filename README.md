@@ -7,7 +7,7 @@ xframe.js is just you want, a JavaScript AMD module. Use it in your html page.
 
 test/frame1.html is a demo page, open it with browser, and click the button. You can find the code is really simple.
 
-For example, If you want to invoke API of a JavaScript Object on the main page from a page inside iframe(maybe with different domain/origin).
+For example, If you want to invoke API of a JavaScript Object on the main page from a page inside iframe.
 You should follow the steps:
 
 ####1. Refer xframe.js on the html5 pages outside and inside the iframe.
