@@ -1,7 +1,7 @@
 XFrameJS
 ========
 
-####A Simple JavaScript Framework(one JS File) helping to invoke API of JavaScript Object Between iframes(even cross domains/origins) on HTML5 page.
+####A Simple JavaScript Framework(one JS File) helping to invoke API and share properties of JS Object across iframes(support cross domains/origins) on HTML5 page.
 
 xframe.js is just you want, a JavaScript AMD module. Use it in your html page.
 
